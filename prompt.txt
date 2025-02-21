@@ -1,0 +1,50 @@
+Create a standalone Python script using Pygame to simulate a realistic 4-way traffic intersection. The simulation should be fully autonomous (no user interaction) and run smoothly at around 30 frames per second.
+
+Requirements & Details
+Environment & Visual Design
+
+Use a black background and draw grey roads forming a 4-way intersection at the center.
+The script should launch a Pygame window showing this intersection without needing additional input from the user.
+Traffic Light System
+
+Implement a fixed cycle for each traffic light: green → yellow → red.
+Configure realistic durations for each color (e.g., a few seconds of green, a short yellow, and then red).
+Ensure that all four directions use a coordinated cycle so that traffic flows correctly and safely.
+Vehicles & Movement
+
+Spawn cars traveling straight from each of the four directions toward the intersection.
+Cars should stop when their light is red (or turning red) and proceed when the light is green.
+Multiple cars can queue up and move forward as soon as the traffic light allows.
+Avoid collisions by enforcing rules that prevent cars from entering the intersection when it is unsafe or when another direction has the right of way.
+Frame Rate & Performance
+
+Target a consistent 30 frames per second.
+No stringent performance constraints, but aim for smooth, stable motion.
+Autonomy & User Interaction
+
+The simulation should run entirely on its own without any user input or manual controls.
+No turn lanes are necessary, and no interactive elements (like user-triggered changes) are required.
+Documentation & Clarity
+
+Write clear docstrings or inline comments explaining how the traffic light timings, car movements, and collision-avoidance logic are implemented.
+Organize the code so it can be easily followed by someone with an intermediate-to-advanced level of Python/Pygame experience.
+Additional Guidelines
+Sequential Reasoning
+
+Outline the logical steps in your code to handle traffic light updates, spawn vehicles, detect and avoid collisions, and refresh the display each frame.
+Ensure the script follows a clear update cycle (e.g., check input/events, update logic, draw scene, manage frames).
+Contextual Awareness
+
+Maintain a cohesive simulation environment: the black background, grey roads, car sprites (or simple shapes), and traffic lights should all remain visually consistent.
+Keep timing realistic but straightforward enough to be understood or tweaked by others.
+Iterative Refinement
+
+If needed, consider placeholders or helper functions (e.g., for adding advanced features later).
+Test the simulation by running it multiple times to confirm that cars respect light cycles, collisions do not occur, and performance remains stable.
+Final Instructions
+Please produce a self-contained Python script that meets the above specifications. The output should demonstrate:
+
+A smooth, continuous traffic simulation (with no user interaction).
+Realistic timing for green-yellow-red traffic lights.
+Safe, collision-free vehicle movement through the intersection.
+Well-structured, commented code suitable for an advanced developer audience.
